@@ -44,7 +44,7 @@ resource "google_compute_instance" "mongo_instance" {
     initialize_params {
       image = google_compute_image.mongodb-image.self_link
       type  = "pd-standard"
-      size  = "10"
+      size  = "50"
     }
   }
   attached_disk {
